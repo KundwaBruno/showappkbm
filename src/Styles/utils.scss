@@ -1,0 +1,113 @@
+@import "./colors.scss";
+
+// Backgrounds -------------
+
+.white_background {
+  background-color: $white_color !important;
+}
+
+.light_grey_background {
+  background-color: $light_grey_color !important;
+}
+
+.red_background {
+  background-color: $red_color !important;
+}
+
+.skwed_background {
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
+}
+
+// Colors
+
+.grey_color {
+  color: $grey_color !important;
+}
+
+.white_color {
+  color: $white_color !important;
+}
+
+.red_color {
+  color: $red_color !important;
+}
+
+// Typographies
+
+.header_text {
+  margin: 20px 0px 20px;
+}
+
+.semi_bold_text {
+  font-weight: 500;
+}
+
+// Sizing ------------
+
+.full_height_width {
+  width: 100%;
+  height: 100%;
+}
+
+// positioning
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.aligned_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Images
+
+.custom_image {
+  width: 100%;
+  height: auto;
+}
+
+// Inputs
+
+.custom_input {
+  height: auto;
+  margin-bottom: 15px;
+  input {
+    padding: 10px 0px 10px;
+    border: none;
+    border-bottom: 2px solid rgb(231, 231, 231);
+    margin: 10px 0px 20px;
+    &:hover {
+      border-bottom: 2px solid $red_color;
+    }
+  }
+}
+
+// Buttons
+
+.custom_button {
+  height: 45px !important;
+}
+
+// Shadows
+
+.custom_shadow {
+  box-shadow: 0 1px 10px rgba(134, 134, 134, 0.12),
+    0 1px 10px rgba(214, 212, 212, 0.24);
+}
+
+// Animations
+
+@keyframes animateLoader {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
